@@ -1,12 +1,97 @@
 <!DOCTYPE html>
-<html lang="el">
-    <base href="/WebDevelopmentAssignment/">
+<html lang="en">
 <head>
-    <meta http-equiv="refresh" content="0; url=daedalusuavmainpage-html.html" />
-  <meta charset="UTF-8">
-  <title>Index Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="daedalusuavmainpagecss.css"><!--Σύδνεση με το αντίστοιχο αρχείο CSS-->
+    <link rel="icon" type="image/x-icon" href="DAEDALUS.png"><!--Το Favicon της ιστοσελίδας-->
+    <script type="text/javascript" src="daedalusuavmainpagejs.js"></script><!--Σύδνεση με το αντίστοιχο αρχείο JavaScript-->
+    <title>Daedalus UAV Systems</title><!--Ο τίτλος της σελίδας-->
 </head>
 <body>
-  <h1>Testing Page</h1>
+
+    <div class="empty-banner"></div><!--Ο κενός χώρος στο πάνω μέρος της σελίδας-->
+    
+    <div class="main-banner"><!--Το μπλε banner με το όνομα της σελίδας-->
+        Daedalus UAV Systems
+    <div class="lang-buttons"><!--Τα κουμπιά αλλαγής γλώσσας της σελίδας-->
+        <button class="lang-button" onclick="location.href='daedalusuavmainpage.html'"><img src="united-kingdom.png"></button>
+        <button class="lang-button" onclick="location.href='daedalusuavmainpage-gr.html'"><img src="greece.png"></button>
+    </div>
+    <div class="list-image-wrapper"><!--Σε αυτή την κλάση περιέχεται το κυρίως περιεχόμενο της κεντρικής σελίδας, η λίστα στην αριστερή πλευρά και οι εικόνες-->
+    <div class="main-list"><!--Η λίστα στην αριστερή πλευρά της σελίδας με τα κουμπιά πλοήγησης-->
+        <div class="brand-name">
+        <ul><button class="main-button" onclick="location.href='daedalusuavmainpage.html'"><img src="DAEDALUS.png"></button>
+        </div>
+        <div class="brand-motto">Providing custom made Unmanned Systems to everyone</div>
+        
+        <li><button class="menu-button" onclick="location.href='daedalusaboutus.html'">About Us</button></li><!--Το πρώτο κουμπί του μενού-->
+        <li><button class="menu-button" onclick="location.href='daedalusourservices.html'">Our Services</button></li><!--Το δεύτερο κουμπί του μενού-->
+        <li><button class="menu-button" onclick="location.href='daedaluscontactinformation.html'">Contact Information</button></li><!--Το τρίτο κουμπί του μενού-->
+        <li><button class="menu-button" onclick="location.href='daedalusgetanoffer.html'">Get an Offer</button></li><!--Το τέταρτο κουμπί του μενού-->
+    </ul>
+    </div>
+    <div class="images-container"><!--Το Container που περιέχει τις 2 εικόνες της κεντρικής σελίδας-->
+        <div class="image1"><!--Το Container της πρώτης εικόνας-->
+        <div class="image1-background"><img src="urbanwarfare.jpg" alt="picture_1_background"></div><!--Το background της πρώτης σελίδας-->
+        <div class="image1-menu"><img src="smallcarbon.png" alt="military_drone"></div><!--Η πρώτη εικόνα της σελίδας-->
+        <div class="middle">
+                   <div class="text1">Delivering high quality systems for every environment</div>
+            
+            </div>
+        </div> 
+        <div class="image2">  <!--Το container της δεύτερης εικόνας-->
+        <div class="image2-background"><img src="sky.jpg" alt="sky_image">
+            <div class="image2-menu"><img src="predator2.png" alt="predator_drone"></div><!--Η δεύτερη εικόνα της σελίδας-->
+            <div class="middle">
+                <div class="text2">Ready made for any operation</div>
+            </div>
+        
+        
+        </div>
+        </div>
+    </div>
+    </div>
+   <div class="categories-carousel">Categories</div><!-- Σε αυτό το container υπάρχει το carousel με κάποια από τα προϊόντα της εταιρίας-->
+   <div class="carousel-box">
+
+       <div class="products-carousel">
+        <button class="type-buttons" onclick='location.href="daedalusourservices.html"'><img src="Military-Drone-PNG-File.png" alt="small_drone"></button><div class="overlay"><div class="text">Small Drones</div></div></div>
+
+        <div class="products-carousel">
+        <button class="type-buttons" onclick='location.href="daedalusourservices.html"'><img src="sarquadcopter.png" alt="sar-drone"></button><div class="overlay"><div class="text">SAR</div></div></div>
+
+        <div class="products-carousel">
+        <button class="type-buttons" onclick='location.href="daedalusourservices.html"'><img src="Military-Drone-PNG-Clipart.png"></button><div class="overlay"><div class="text">Surveillance</div></div></div>
+
+        <div class="products-carousel">
+        <button class="type-buttons" onclick='location.href="daedalusourservices.html"'><img src="agriculture-drone.png"></button><div class="overlay"><div class="text">Agricultural</div></div></div>
+
+        <div class="products-carousel">
+        <button class="type-buttons" onclick='location.href="daedalusourservices.html"'><img src="Military-Drone-PNG-Free-Image.png"></button><div class="overlay"><div class="text">Military Drones</div></div></div>
+
+        <div class="products-carousel">
+        <button class="type-buttons" onclick='location.href="daedalusourservices.html"'><img src="smallcarbon.png"></button><div class="overlay"><div class="text">Prototypes</div></div></div>
+
+        <div class="products-carousel">
+        <button class="type-buttons" onclick='location.href="daedalusourservices.html"'><img src="Phoenix-mockup.png"></button><div class="overlay"><div class="text">Firefighting</div></div></div>
+    </div>
+    <footer class="bottom-page"><!--Το κάτω μέρος της σελίδας-->
+  <div class="bottom-page-functions"><!--Οι λειτουργίες της περιοχής-->
+    <div class="bottom-page-menu"><!--Το μικρό μενού επιλογών-->
+      <li><button class="bottom-button" onclick="location.href='daedalusaboutus.html'">About Us</button></li>
+      <li><button class="bottom-button" onclick="location.href='daedaluscontactinformation.html'">Contact Information</button></li>
+      <li><button class="bottom-button" onclick="location.href='daedalusgetanoffer.html'">Get an Offer</button></li>
+    </div>
+    <div class="bottom-page-social"><!--Οι εικόνες για τα μέσα κοινωνικής δικτύωσης-->
+      <div class="social-media"><img src="linkedin.png"><span class="tab"><h4>@daeadlusuavservices</h4></span></div>
+      <div class="social-media"><img src="phone.png"><span class="tab"><h4>+30 2310 000000</h4></span></div>
+      <div class="social-media"><img src="email.png"><span class="tab"><h4>daedalus@uav.info.gr</h4></span></div>
+    </div>
+  </div>
+</footer>
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>
 </html>
