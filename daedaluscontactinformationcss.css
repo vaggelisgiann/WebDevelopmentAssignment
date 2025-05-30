@@ -1,0 +1,269 @@
+body{ /* Το χρώμα του φόντου της σελίδας */
+    background-color: whitesmoke;
+}
+.tab { /* Το κένο "tab" */
+    display: inline-block;
+    margin-left: 2em;
+}
+.main-banner{ /* Η μορφοποίηση του κεντρικού banner */
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    height: 50px;
+    background-color: #024d99;
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+    font-size:xx-large;
+    text-align: center;
+}
+.lang-buttons{
+      position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+    margin-top: 47px;
+}
+.lang-button{
+    background-color: transparent;
+    border: none;
+    transition: transform .2s;
+
+}
+.lang-button:hover{
+    transform:scale(1.2);
+}
+.lang-button img{
+    height: 35px;
+    width: auto;
+}
+.empty-banner{  /* Η μορφοποίηση του κενού banner */
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    height: 50px;
+    background-color: whitesmoke;
+
+}
+
+.main-list{ /* Η μορφοποίηση της λίστας στην αριστερή μερία της σελίδας*/
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #525252;
+    align-content: center;
+    list-style-type: none;
+    margin-left: 15px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-left: 30px;
+    text-align: left;
+    width: 850px;
+}
+.main-button{
+    background-color: transparent;
+    border: none;
+    transition: transform .2s;
+    font-weight: bold;
+    height: auto;
+    position: relative;
+}
+.main-button img{
+    width: 400px;
+    height: auto;
+    justify-content: center;
+}
+.brand-motto{ /* Η μορφοποίηση του σλόγκαν της σελίδας */
+    font-family: Arial, Helvetica, sans-serif;
+     color: #525252;
+     font-size: 50px;
+}
+
+.menu-button{   /* Η μορφοποίηση των κουμπιών του menu της παραπάνω λίστας*/
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    transition: transform .2s;
+    color: #525252;
+    font-size: 40px;
+}
+
+.main-button:hover{
+    transform:scale(1.1);
+}
+.menu-button:hover{ /* η μορφοποίηση που γίνεται κατά την αιώρηση πάνω από τα κουμπιά της λίστας*/
+    transform: scale(1.2);
+    color: #024d99;
+}
+
+.list-image-wrapper { /* τροποποίηση της κλάσης που περιλαμβάνει την λίστα menu-list και τις εικόνες της σελίδας*/
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+.contact-info{
+    width: 1350px;
+    position: relative;
+    margin-top: 100px;
+    text-align: left;
+    color: #525252;
+    justify-content: center;
+}
+.contact-text{
+    text-align: center;
+    color: black;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+}
+.h3{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+.offer{
+    background-color: transparent;
+    border: transparent;
+    text-align: left;
+    transition: transform .2s;
+    color: #525252;
+}
+.offer:hover{
+    color:#024d99;
+}
+.collapsible {/*Το μενου θέσεων εργασίας*/
+  background-color: transparent;
+  color:#525252;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+
+}
+
+.active, .collapsible:hover {
+  background-color:#024d99;
+  color: whitesmoke;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color:#525252;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+.contact-form-container { /* Η αρχή της τροποποίησης των κλάσεων της φόρμας επικοινωνίας */
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+}
+
+.form-group { 
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.875rem;
+    display: none; /* Hidden by default */
+}
+
+.submit-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #218838;
+}
+.bottom-page{   /* η κάτω περιοχή της σελίδας */
+    background-color: #024d99;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    height: 500px;
+
+}
+.bottom-button{
+
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent;
+    border: none;
+    list-style-type: none;
+    align-content: space-around;
+    margin-bottom: 10px;
+    margin-right: 1400px;
+    color: whitesmoke;
+    font-size: 40px;
+    transition: transform .2s;
+    text-align: left;
+}
+.bottom-button:hover{
+    transform: scale(1.1);
+    color: black;
+}
+.bottom-page-social{
+      background-color: transparent;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.social-media{
+    background-color:transparent;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+}
+.social-media img{
+    color:white;
+    width: 40px;
+    height: auto;
+}
+
